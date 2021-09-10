@@ -1,0 +1,76 @@
+// css reset
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 2rem;
+  background-color: rgb(37, 27, 27);
+  transition: 0.3s;
+}
+
+.outer-container {
+  padding: 1rem;
+  width: 80vw;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+header {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  max-width: 100%;
+  width: 500px;
+
+  label {
+    font-size: 1.3rem;
+  }
+
+  input {
+    margin: 0.6rem 0;
+    padding: 0.6rem;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid rgb(37, 27, 27);
+  }
+
+  button {
+    display: block;
+    width: 40%;
+    margin: 10px auto 0 auto;
+    padding: 0.8rem 0;
+    background-color: rgb(37, 27, 27);
+    color: white;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+
+.result {
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
