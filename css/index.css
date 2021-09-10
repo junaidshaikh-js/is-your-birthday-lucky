@@ -46,6 +46,7 @@ form label {
 }
 
 form input {
+  width: 100%;
   margin: 0.6rem 0;
   padding: 0.6rem;
   border-radius: 10px;
@@ -55,7 +56,8 @@ form input {
 
 form button {
   display: block;
-  width: 40%;
+  width: 48%;
+  max-width: 170px;
   margin: 10px auto 0 auto;
   padding: 0.8rem 0;
   background-color: #251b1b;
