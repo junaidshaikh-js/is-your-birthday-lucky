@@ -1,8 +1,9 @@
 const dateOfBirth = document.querySelector("#dob");
-
 const luckyNumber = document.querySelector("#lucky-number");
-
 const form = document.querySelector("form");
+
+const privacyNote = document.querySelector(".privacy-notice");
+const hidePrivacyNoteBtn = document.querySelector(".hide-privacy-note");
 
 function isNumberLucky(dob, number) {
   let dateString = dob.replaceAll("-", "");
@@ -49,3 +50,15 @@ function showLuckyNumber(e) {
 }
 
 form.addEventListener("submit", showLuckyNumber);
+
+// hide privacy note when clicked on crossed
+
+function hidePrivacyNote() {
+  privacyNote.classList.add("drop-item");
+
+  setTimeout(() => {
+    privacyNote.style.display = "none";
+  }, 900);
+}
+
+hidePrivacyNoteBtn.addEventListener("click", hidePrivacyNote);
