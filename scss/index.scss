@@ -24,7 +24,7 @@ body {
 .outer-container {
   padding: 1rem;
   width: 80vw;
-  max-width: 800px;
+  max-width: 600px;
   background-color: white;
   border-radius: 10px;
 }
@@ -67,6 +67,30 @@ form {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+  }
+}
+
+// footer section
+ul {
+  list-style: none;
+  margin: 0.6rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-section {
+  text-align: center;
+
+  h2 {
+    padding: 0.6rem 0;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
