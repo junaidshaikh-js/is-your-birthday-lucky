@@ -34,6 +34,47 @@ header {
   text-align: center;
 }
 
+.privacy-notice {
+  position: relative;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  padding: 1rem 0;
+  background-color: black;
+  font-size: 1.1rem;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+
+  .hide-privacy-note {
+    position: absolute;
+    right: 12px;
+    top: 7px;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.drop-item {
+  opacity: 1;
+  animation: remove-item 1s linear forwards;
+  transform-origin: 0 100%;
+}
+
+@keyframes remove-item {
+  from {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(400px) rotateZ(90deg);
+  }
+}
+
 form {
   display: flex;
   flex-direction: column;
